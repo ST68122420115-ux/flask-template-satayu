@@ -27,3 +27,9 @@ def favorite_sport():
   title = 'Favorite Sport Page'
   sport = ['ฟุตบอล', 'เทนนิส', 'อีสปอร์ต']
   return render_template('favorite_sport.html', title=title, sport=sport)
+
+@app.route('/favorite/movie')
+def favorite_movie():
+  title = 'Favorite Movie Page'
+  movie = ['อเวนเจอร์ส', 'อินเตอร์สเตลลาร์', 'สตาร์ เทรค', 'อพอลโล 13', 'ฟาสแอนฟีเรียส']
+  return render_template('favorite_movie.html', title=title, movie=movie)
